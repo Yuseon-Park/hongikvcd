@@ -2,7 +2,6 @@ const toggleVideo = (ev) => {
     const EL = ev.currentTarget;
     const EL_video = EL.querySelector("video");
     const isPlay = ev.type === "mouseenter";
-    EL_video[isPlay ? "play" : "pause"]();
 };
 
 
