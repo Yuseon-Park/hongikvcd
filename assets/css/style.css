@@ -30,7 +30,7 @@ body {
 a:link {
   display: inline;
   z-index: 100000;
-  color: blue;
+  color: #2151ff;
   text-decoration: none;
   z-index: 100000;
 }
@@ -41,11 +41,11 @@ a:hover {
 }
 
 a:active {
-  color: blue;
+  color: #2151ff;
 }
 
 a:visited {
-  color: blue;
+  color: #2151ff;
 }
 
 svg {
@@ -140,7 +140,7 @@ height: 100%
 }
 
 .index_drawer a {
-color: blue;
+color: #2151ff;
 text-decoration: underline;
 }
 
@@ -209,8 +209,8 @@ img {
 /* button */
 button {
   padding: 20px;
-  border: 0px solid blue;
-  color: blue!important;
+  border: 0px solid #2151ff;
+  color: #2151ff!important;
   background-color: transparent;
   border-radius: 0px;
   font-size: 6vh;
