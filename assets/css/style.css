@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "ChurchwardNewstypeLight-Regular";
+  src: url('assets/font/ChurchwardNewstypeLightRegular/font.woff2') format('woff2'), url('assets/webFonts/ChurchwardNewstypeLightRegular/font.woff') format('woff');
+}
+
+/* font-family: "Source Sans Pro","HelveticaNeue-Regular","Helvetica Neue Regular","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; */
+
 * {
   box-sizing: border-box;
   outline: none;
@@ -14,8 +21,9 @@ body {
   font-weight: 400;
   font-size: 2.5vh;
   line-height: 4vh;
+  hyphens: auto;
+  word-break: keep-all;
   word-wrap: break-word;
-  word-break: break-all;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -47,36 +55,17 @@ svg {
 }
 
 .primary-header {
-  padding: 20px;
-  position: fixed;
+  padding: 0px;
   left: 0;
   right: 0;
   top: 0;
   z-index: 1000;
-  transition: padding 0.3s, margin 0.3s;
-  width: 100%
+  transition: padding 0.3s, margin 0.3s, box-shadow 0.8s;
+  background-color: transparent;  
 }
 
 .primary-header--absolute-positioning {
   position: absolute
-}
-
-.primary-header {
-  padding: 0;
-  transition: padding 0.3s, margin 0.3s, box-shadow 0.8s;
-  /* box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); */
-  background-color: transparent;
-}
-
-.primary-header {
-  padding: 0;
-  transition: padding 0.3s
-}
-
-.header--#FFFFFF .main-header {
-  color: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  background-color: transparent
 }
 
 .fixed {
@@ -97,14 +86,14 @@ svg {
 
 .container {
   display: grid;
-  grid-template-columns: 0.5fr 4fr 1.5fr 1fr ;
+  grid-template-columns: 0.5fr 0.5fr 4fr 1fr 1fr;
   grid-gap: 10px;
   padding: 0px 20px 0px;
   color: #000000;
   background-color: transparent;
   letter-spacing: 0vh;
   text-align: left;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 0px solid #CCCCCC;
 }
 
 .container > div {
@@ -112,7 +101,7 @@ svg {
 }
 
 .container:hover {
-  color: #CCCCCC;
+  color: #2151ff;
   background-color: transparent;
 }
 
@@ -129,7 +118,7 @@ svg {
 overflow-y: hidden;
 transition-property: all;
 transition-duration: .3s;
-height: 100%
+height: 100%;
 }
 
 .index_drawer a {
@@ -143,11 +132,11 @@ color: #000000;
 
 .index_drawer .index_content {
   display: grid;
-  grid-template-columns: 0.5fr 4fr 1.5fr 1fr ;
+  grid-template-columns: 1fr 0fr 4fr 1fr 1fr;
   grid-gap: 10px;
   padding: 0px 20px 0px;
   color: #000000;
-  background-color: #CCCCCC;
+  background-color: #f5f5f5;
   overflow-x: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -177,12 +166,6 @@ color: #000000;
   cursor: pointer;
   position: absolute;
 }
-/*   
-.index {
-  word-spacing: 4px;
-  line-height: 8px;
-  padding: 1.2rem;
-} */
 
 img {
   display: inline-block;
@@ -192,8 +175,8 @@ img {
   padding: auto;
   transition: all 500ms ease;
   cursor: pointer;
-  /* border: 1px solid rgba(0,0,0,0.05);
-  box-shadow: 0 0 15px rgba(125,125,125,0.18); */
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 0 15px rgba(125,125,125,0.18);
   /* border-radius: 20px; */
 }
 
@@ -222,21 +205,6 @@ button {
   color: #FFFFFF;
 }
 
-.bottom-buttons {
-  position: fixed;
-  bottom: 20px;
-  left: 6px;
-  height: 2em;
-  line-height: 1.4em;
-  padding: 0.25em 0.5em;
-  cursor: pointer;
-  margin: 0.25rem;
-}
-
-.bottom-buttons button a {
-  text-decoration: none;
-  color: black;
-}
 
 @media (min-width: 300px) and (max-width: 769px) {
   * {
@@ -267,32 +235,26 @@ button {
   -webkit-font-smoothing: antialiased;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 7fr;
+  grid-gap: 0px;
+  padding: 20px;
+}
 
 .index_drawer .index_content {
   display: grid;
-  grid-template-columns: 0fr 7fr;
+  grid-template-columns: 7fr;
   grid-gap: 10px;
   padding: 20px;
   color: #000000;
-  background-color: #CCCCCC;
   overflow-x: hidden;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-.header--#FFFFFF .main-header {
-  border:1px solid #FFFFFF
-}
-
 .primary-header {
   padding:2px
-}
-
-.container {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-gap: 0px;
-  margin-left: 6px;
 }
 }
