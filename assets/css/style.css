@@ -56,8 +56,8 @@ svg {
 
 .primary-header {
   padding: 0px;
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
   z-index: 1000;
   transition: padding 0.3s, margin 0.3s, box-shadow 0.8s;
   background-color: transparent;  
@@ -168,6 +168,11 @@ color: #2151ff;
   position: absolute;
 }
 
+svg {
+  display: inline-block;
+  padding: 20px;
+}
+
 img {
   display: inline-block;
   height: 14vh;
@@ -219,6 +224,11 @@ button {
     width: 100% !important;
     height: 100%;
     overflow-y: auto;
+  }
+
+  svg {
+    display: inline-block;
+    padding: 20px;
   }
 
   body {
