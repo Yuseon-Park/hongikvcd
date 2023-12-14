@@ -93,7 +93,7 @@ svg {
   background-color: transparent;
   letter-spacing: 0vh;
   text-align: left;
-  border-bottom: 0px solid #CCCCCC;
+  border-bottom: 0px solid #f5f5f5;
 }
 
 .container > div {
@@ -122,12 +122,12 @@ height: 100%;
 }
 
 .index_drawer a {
-color: #2151ff;
+color: white;
 text-decoration: underline;
 }
 
 .index_drawer a:hover {
-color: #000000;
+color: #2151ff;
 }
 
 .index_drawer .index_content {
@@ -162,7 +162,7 @@ color: #000000;
 
 /* additional */
 #container img.zoomed {
-  transform: scale(5);
+  transform: scale(8);
   cursor: pointer;
   position: absolute;
 }
