@@ -100,8 +100,8 @@ svg {
 }
 
 .container:hover {
-  color: #2151ff;
-  background-color: transparent;
+  color: #f5f5f5;
+  background-color: #000000;
 }
 
 #index {
